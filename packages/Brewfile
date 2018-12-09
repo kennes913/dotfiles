@@ -1,0 +1,53 @@
+# devsk.dotfiles.packages Brewfile
+
+# Taps
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "caskroom/cask"
+tap "homebrew/cask-fonts"
+
+# System Tools
+cask "iterm2"
+cask "tunnelblick"
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "neovim"
+brew "htop"
+brew "tmux"
+brew "wget"
+brew "tree"
+brew "jq"
+
+# Development - General
+cask "visual-studio-code"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "node"
+brew "golang"
+
+# Development - Virtual Resources
+cask "virtualbox"
+cask "vagrant"
+cask "docker"
+cask "docker-toolbox"
+brew "kubernetes-cli"
+brew "helm"
+cask "chef/chef/chefdk"
+
+# Development - Database
+brew "mysql"
+brew "postgres"
+cask "datagrip"
+
+# Productivity
+cask "macpass"
+cask "slack"
+cask "google-chrome"
+cask "libreoffice"
+cask "filezilla"
+cask "signal"
+
+# Media
+cask "spotify"
