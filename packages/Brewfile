@@ -26,6 +26,8 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "node"
 brew "golang"
+cask install "java"
+brew instal "scala"
 
 # Development - Virtual Resources
 cask "virtualbox"
@@ -34,6 +36,8 @@ cask "docker"
 cask "docker-toolbox"
 brew "kubernetes-cli"
 brew "helm"
+brew "terraform"
+brew "terragrunt"
 cask "chef/chef/chefdk"
 
 # Development - Database
@@ -48,6 +52,7 @@ cask "google-chrome"
 cask "libreoffice"
 cask "filezilla"
 cask "signal"
+brew "keybase"
 
 # Media
 cask "spotify"

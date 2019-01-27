@@ -27,9 +27,9 @@ echo_installed() {
     for file in {.*,*};
         do 
             print_file="True"
-            for base_file in "${array[@]}";
+            for native_file in "${array[@]}";
                 do
-                    if [[ "$file" == "$base_file" ]]; then
+                    if [[ "$file" == "$native_file" ]]; then
                         print_file="False"
                         break
                     fi

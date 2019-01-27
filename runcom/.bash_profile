@@ -1,24 +1,4 @@
-# dotfiles.runcom.bash_profilex
-echo "         ______________"
-echo "        /             /|"
-echo "       /             / |"
-echo "      /____________ /  |"
-echo "     | ___________ |   |"
-echo "     ||           ||   |"
-echo "     ||           ||   |"
-echo "     ||[devsk]$...||   |"
-echo "     ||___________||   |"
-echo "     |   _______   |  /"
-echo "    /|  (_______)  | /"
-echo "   ( |_____________|/"
-echo "    \\"
-echo ".=======================."
-echo "| ::::::::::::::::  ::: |"
-echo "| ::::::::::::::[]  ::: |"
-echo "|   -----------     ::: |"
-echo "'-----------------------'"
-
-
+# dotfiles.runcom.bash_profile
 DOT_FILES_DIRECTORY="$HOME/.dotfiles"
 SYSTEM_DIRECTORY="$HOME/.dotfiles/system"
 
