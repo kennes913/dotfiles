@@ -1,4 +1,4 @@
-#devsk.dotfiles.packages 
+#devsk.dotfiles.packages
 
 DOT_FILES_DIRECTORY="$HOME/.dotfiles"
 
@@ -8,16 +8,16 @@ DOT_FILES_DIRECTORY="$HOME/.dotfiles"
 #  sudo rm -rf /usr/local/*
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
-# Build RVM -- 
+# Build RVM --
 # This will install some dependencies through Homebrew in /usr/local/bin:
-#  autoconf 
+#  autoconf
 #  automake
-#  libtool 
-#  pkg-confiig 
-#  coreutils 
-#  libyaml 
-#  readline 
-#  libksba 
+#  libtool
+#  pkg-confiig
+#  coreutils
+#  libyaml
+#  readline
+#  libksba
 #  openssl@1.1
 # To uninstall, run:
 #  rvm implode or rm -rf $DOT_FILES_DIRECTORY/packages/rvm
@@ -34,7 +34,7 @@ export HOMEBREW_FORCE_BREWED_CURL=1
 cd $DOT_FILES_DIRECTORY/packages
 brew update
 brew cleanup
-brew bundle 
+brew bundle
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

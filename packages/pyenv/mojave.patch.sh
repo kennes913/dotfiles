@@ -1,3 +1,0 @@
-# This is a fix for https://github.com/pyenv/pyenv/issues/1219
-
-sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
