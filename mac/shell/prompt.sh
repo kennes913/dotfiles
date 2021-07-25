@@ -1,4 +1,9 @@
-# dotfiles.system.prompt
+#!/usr/bin/env bash
+# this shebang deviates from the google style guide in order to support mac os
+# for which /bin/bash is stuck on bash 3
+#
+# Prompt
+
 echo "         ______________"
 echo "        /             /|"
 echo "       /             / |"
