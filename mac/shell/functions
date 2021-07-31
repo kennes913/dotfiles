@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# this shebang deviates from the google style guide in order to support mac os
-# for which /bin/bash is stuck on bash 3
 #
 # Custom functions
 
-what_have_I_done() {
+function get_home_entropy() {
 
     array=(
         ".CFUserTextEncoding"
@@ -41,6 +39,6 @@ what_have_I_done() {
     done
 }
 
-unlock() {
+function get_1pass() {
     pbcopy < "$HOME"/.1pass/.pass/txt
 }

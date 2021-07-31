@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+CWD=$(pwd)
+DOTFILES_ROOT=$(dirname "$CWD")
+
+readonly "$DOTFILES_ROOT"
+source helpers
+
+main () {
+
+    # Install tooling
+    set_up_tooling
+
+    # Load shell files
+    load_shell_files
+
+}
+
+main

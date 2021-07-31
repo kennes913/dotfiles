@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+# Environment variables 
+
+# python
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+
