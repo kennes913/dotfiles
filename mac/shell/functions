@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#
+# Custom functions
+
+function get_home_entropy() {
+
+    array=(
+        ".CFUserTextEncoding"
+        ".DS_Store"
+        ".Trash"
+        ".bash_history"
+        ".bash_sessions"
+        ".vim"
+        ".viminfo"
+        "Applications"
+        "Desktop"
+        "Documents"
+        "Downloads"
+        "Library"
+        "Movies"
+        "Music"
+        "Pictures"
+        "Public"
+    )
+
+    echo "Directories and files installed in $HOME :"
+    cd "$HOME" || exit
+    for file in {.*,*}; do
+        print_file="True"
+        for native_file in "${array[@]}"; do
+            if [[ "$file" == "$native_file" ]]; then
+                print_file="False"
+                break
+            fi
+        done
+        if [[ "$print_file" == "True" ]]; then
+            echo "$file"
+        fi
+    done
+}
+
+function get_1pass() {
+    pbcopy < "$HOME"/.1pass/.pass/txt
+}

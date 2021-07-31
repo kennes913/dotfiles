@@ -1,8 +1,6 @@
-# devsk.dotfiles.system.alias
-
-# nvim
-alias vi="nvim"
-alias vim="nvim"
+#!/usr/bin/env bash
+#
+# Aliases
 
 # MacOS show and hide hidden files
 # Credit: https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/

@@ -1,20 +1,9 @@
-# devsk.dotfiles.packages Brewfile
-
-# Taps
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "caskroom/cask"
-tap "homebrew/cask-fonts"
-
 # System Tools
 cask "iterm2"
 cask "tunnelblick"
-brew "zsh"
-brew "zsh-completions"
-brew "zsh-syntax-highlighting"
-brew "neovim"
+brew "gh"
 brew "htop"
+brew "ngrok"
 brew "tmux"
 brew "wget"
 brew "tree"
@@ -25,28 +14,32 @@ cask "visual-studio-code"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "node"
+brwe "npm"
 brew "golang"
+brew "rustup-init"
 
-# Development - Virtual Resources
-cask "virtualbox"
-cask "vagrant"
+# ops
+brew "circleci"
 cask "docker"
 cask "docker-toolbox"
 brew "kubernetes-cli"
 brew "helm"
-cask "chef/chef/chefdk"
+brew "terraform"
+brew "terragrunt"
+cask "virtualbox"
+cask "vagrant"
+brew "minikube"
+brew "sops"
 
 # Development - Database
-brew "mysql"
-brew "postgres"
-cask "datagrip"
+cask "dbeaver community edition"
 
 # Productivity
 cask "macpass"
 cask "slack"
+cask "firefox"
 cask "google-chrome"
 cask "libreoffice"
-cask "filezilla"
 cask "signal"
 
 # Media

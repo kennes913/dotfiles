@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+CWD=$(pwd)
+DOTFILES_ROOT=$(dirname "$CWD")
+
+function get_os() {
+    case "$(uname -s)" in
+    Darwin)
+        echo 'osx'
+        ;;
+    Linux)
+        echo 'linux'
+        ;;
+    CYGWIN* | MINGW32* | MSYS* | MINGW*)
+        echo 'windows'
+        ;;
+    *)
+        echo 'other'
+        ;;
+    esac
+}
+
+function load_shell_files() {
+    OS=$(get_os)
+    if [[ "${OS}" == "osx" ]]; then
+        cd "$DOTFILES_ROOT/mac/shell" || exit
+        for file in *; do
+            cp -- "$file" "$HOME/.oh-my-zsh/custom/${file}.zsh"
+        done
+        cd "$CWD" || exit
+    fi
+    # TODO: add linux shell file loader
+}
+
+function set_up_tooling() {
+    OS=$(get_os)
+    if [[ "${OS}" == "osx" ]]; then
+        cd "$DOTFILES_ROOT/mac/tooling" || exit
+        bash build
+    fi
+    # TODO: add linux installation
+}
