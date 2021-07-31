@@ -1,6 +1,6 @@
 # . files 
 
-Install tools and configure shells on both OSX and Linux (tbd). 
+Install tools and configure shells on both OSX and Linux. 
 
 ### Structure
 

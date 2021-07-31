@@ -32,7 +32,7 @@ function load_shell_files() {
     # TODO: add linux shell file loader
 }
 
-function set_up_tooling {
+function set_up_tooling() {
     OS=$(get_os)
     if [[ "${OS}" == "osx" ]]; then
         cd "$DOTFILES_ROOT/mac/tooling" || exit
