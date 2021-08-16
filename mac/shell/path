@@ -2,5 +2,10 @@
 #
 # Path
 
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Rust
 # shellcheck disable=SC1091
 source "$HOME/.cargo/env"

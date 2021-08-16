@@ -5,4 +5,6 @@
 # python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-
+# aws
+export AWS_CONFIG_FILE=~/.aws/config
+export AWS_CLI_AUTO_PROMPT=on-partial
