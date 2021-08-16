@@ -6,3 +6,9 @@
 # Credit: https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# kubectl
+command kubectl >/dev/null && {
+    alias k=kubectl
+    complete -F __start_kubectl k
+}
